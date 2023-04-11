@@ -1,0 +1,59 @@
+.container-hours {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 2rem;
+
+  &__title {
+    font-size: 2.3rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+  }
+
+  &__bottom {
+    display: flex;
+    flex-wrap: wrap;
+    width: 85%;
+    max-width: 100rem;
+    justify-content: center;
+  }
+}
+
+.hour-item {
+  font-size: 1.4rem;
+  background-color: $color-white;
+  border-radius: 15px;
+  height: 16rem;
+  width: 10rem;
+  margin: 0.5rem;
+  padding: 0.5rem 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  &.night{
+    background-color: $color-night;
+  }
+
+  &__icon-small {
+    width: 4rem;
+  }
+
+  &__time {
+    color: #212121;
+    font-weight: 600;
+  }
+
+  &__min-max {
+    color: #757575;
+  }
+}
+
+@include respond(phone) {
+  .container-hours__bottom{
+    width: 90%;
+  }
+}
+
+

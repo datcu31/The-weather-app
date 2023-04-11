@@ -1,0 +1,21 @@
+.weather {
+  background-image: linear-gradient(
+    to right bottom,
+    $color-day-light,
+    $color-day-dark
+  );
+  padding-top: 15rem;
+  margin-top: -20vh;
+
+  &.night {
+    background-image: linear-gradient(
+      to right bottom,
+      $color-night-burgundy,
+      $color-night-gray-blue
+    );
+  }
+
+  // @include respond(tab-port) {
+  //   padding: 22rem 0;
+  // }
+}

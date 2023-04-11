@@ -1,0 +1,61 @@
+.header {
+  position: relative;
+  height: 60vh;
+  background-image: linear-gradient(
+      to right bottom,
+      rgba($color-day-light, 0.4),
+      rgba($color-day-dark, 0.4)
+    ),
+    url("../../images/header-clouds.jpg");
+  background-size: cover;
+  background-position: center;
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 50vh, 0 100%);
+  clip-path: polygon(0 0, 100% 0, 100% 50vh, 0 100%);
+  transition: all 1s;
+
+  &.night {
+    background-image: linear-gradient(
+      to right bottom,
+      rgba($color-gray-dark-2, 0.1),
+      rgba($color-gray-dark, 0.1)
+    ),
+    url("../../images/header-clouds-night.jpg");
+  }
+
+  @include respond(phone) {
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 60vh, 0 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 60vh, 0 100%);
+  }
+
+  &__logo-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: 4rem;
+    left: 4rem;
+  }
+
+  &__logo {
+    width: 4rem;
+  }
+
+  &__logo-text {
+    color: $color-white;
+    display: block;
+    text-transform: uppercase;
+    font-weight: 600;
+  }
+
+  &__button {
+    position: absolute;
+    top: 5.5rem;
+    right: 4rem;
+  }
+
+  &__text-box {
+    @include center; //center the box
+    top: 55%;
+    text-align: center;
+  }
+}
