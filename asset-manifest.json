@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/The-weather-app/static/css/main.d5b8c602.css",
+    "main.js": "/The-weather-app/static/js/main.da9ffbc3.js",
+    "static/media/header-clouds.jpg": "/The-weather-app/static/media/header-clouds.51927bac9f9a2bff50ff.jpg",
+    "static/media/header-clouds-night.jpg": "/The-weather-app/static/media/header-clouds-night.7664469a918e5d757d72.jpg",
+    "index.html": "/The-weather-app/index.html",
+    "main.d5b8c602.css.map": "/The-weather-app/static/css/main.d5b8c602.css.map",
+    "main.da9ffbc3.js.map": "/The-weather-app/static/js/main.da9ffbc3.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d5b8c602.css",
+    "static/js/main.da9ffbc3.js"
+  ]
+}
